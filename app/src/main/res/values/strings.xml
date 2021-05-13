@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">THE COCKTAIL</string>
+    <string name="home">Home</string>
+    <string name="hot">Cocktails</string>
+    <string name="genres">Filter</string>
+    <string name="favorite">Favorite</string>
+    <string name="title_app">T H E  C O C K T A I L</string>
+    <string name="search">Search</string>
+    <string name="popular">Popular Drinks</string>
+    <string name="top_rate">Lastest Drinks</string>
+    <string name="up_coming">Random Drinks</string>
+    <string name="overview">Instructions: \n</string>
+    <string name="no_video">Ingredients</string>
+    <string name="genres_tittle">Choose a genres</string>
+    <string name="personal_info">Glass</string>
+    <string name="birthday">Type</string>
+    <string name="place_of_birth">Drinks</string>
+    <string name="gender">Category</string>
+    <string name="known_for">Glass</string>
+    <string name="biography">Alcohohic</string>
+    <string name="result">Multi-Ingredient </string>
+</resources>

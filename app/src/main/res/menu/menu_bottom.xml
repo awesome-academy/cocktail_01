@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/itemCocktailsPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_cocktails"
+        android:title="Cocktails" />
+    <item
+        android:id="@+id/itemFilterPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_filter"
+        android:title="Filter" />
+    <item
+        android:id="@+id/itemFavoritePage"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorite"
+        android:title="Favorite" />
+</menu>
