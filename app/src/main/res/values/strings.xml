@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">THE COCKTAIL</string>
+    <string name="home">Home</string>
+    <string name="title_app">T H E  C O C K T A I L</string>
+    <string name="the_cocktail">THE COCKTAIL</string>
+    <string name="cocktails">Cocktails</string>
+    <string name="filter">Filter</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favorite</string>
+    <string name="instructions">Instructions: \n</string>
+    <string name="genres_tittle">Choose a genres</string>
+    <string name="glass">Glass</string>
+    <string name="alcoholic">Alcoholic</string>
+    <string name="ordinary">Ordinary</string>
+    <string name="cocktail">Cocktail</string>
+    <string name="champagne">Champagne</string>
+    <string name="result">Multi-Ingredient </string>
+    <string name="popular">Popular</string>
+    <string name="latest">Latest</string>
+    <string name="ingredients">Ingredients</string>
+</resources>
