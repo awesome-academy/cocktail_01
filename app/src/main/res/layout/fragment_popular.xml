@@ -15,21 +15,21 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPopularDrinks"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/dp_35"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_10"
             android:background="@drawable/custom_cocktails_screen_button"
             android:text="@string/popular"
             android:textColor="@color/black"
             android:textSize="@dimen/sp_12"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.281"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnLatestDrinks"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/dp_35"
+            android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/dp_10"
             android:layout_marginEnd="@dimen/dp_50"
             android:background="@drawable/custom_cocktails_screen_button_not_click"

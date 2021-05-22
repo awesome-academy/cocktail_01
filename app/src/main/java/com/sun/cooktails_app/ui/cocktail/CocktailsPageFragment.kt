@@ -10,18 +10,21 @@ import com.sun.cooktails_app.base.BaseFragment
 import com.sun.cooktails_app.data.model.Popular
 import com.sun.cooktails_app.data.source.remote.CocktailRemoteDataSource
 import com.sun.cooktails_app.data.source.repository.CocktailsRepository
+import com.sun.cooktails_app.ui.cocktail.adapter.CocktailsAdapter
 import kotlinx.android.synthetic.main.fragment_popular.*
 import java.lang.Exception
 
 class CocktailsPageFragment : BaseFragment(), CocktailsContact.View {
 
-    private lateinit var cocktailsPresenter: CocktailsPresenter
-    private val adapterCocktails by lazy {
-        CocktailsAdapter() {
-        }
-    }
     private val gridLayoutManager = GridLayoutManager(context, 2)
-
+    private val adapterCocktails by lazy { CocktailsAdapter() {} }
+    private val cocktailsPresenter: CocktailsContact.Presenter by lazy {
+        CocktailsPresenter(
+            CocktailsRepository.getInstance(
+                CocktailRemoteDataSource.getInstance()
+            )
+        )
+    }
 
     override fun getLayoutId() = R.layout.fragment_popular
 
@@ -41,13 +44,10 @@ class CocktailsPageFragment : BaseFragment(), CocktailsContact.View {
     }
 
     private fun initData() {
-        cocktailsPresenter = CocktailsPresenter(
-            CocktailsRepository.getInstance(
-                CocktailRemoteDataSource.getInstance()
-            )
-        )
-        cocktailsPresenter.setView(this)
-        cocktailsPresenter.onStart()
+        cocktailsPresenter.apply {
+            setView(this@CocktailsPageFragment)
+            onStart()
+        }
     }
 
     private fun initRecyclerView() {

@@ -15,7 +15,6 @@ class CocktailsRepository private constructor(
     }
 
     companion object {
-
         private var instance: CocktailsRepository? = null
 
         fun getInstance(
