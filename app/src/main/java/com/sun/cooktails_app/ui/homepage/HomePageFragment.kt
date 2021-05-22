@@ -1,6 +1,7 @@
 package com.sun.cooktails_app.ui.homepage
 
 import android.view.View
+import androidx.viewpager.widget.ViewPager
 import com.sun.cooktails_app.R
 import com.sun.cooktails_app.base.BaseFragment
 import com.sun.cooktails_app.ui.cocktail.CocktailsPageFragment
@@ -47,6 +48,21 @@ class HomePageFragment : BaseFragment() {
                 else -> false
             }
         }
+        viewPagerHomePage.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+            override fun onPageScrolled(
+                position: Int,
+                positionOffset: Float,
+                positionOffsetPixels: Int
+            ) {
+            }
+
+            override fun onPageSelected(position: Int) {
+                bottomNavHomePage.menu.getItem(position).isChecked = true
+            }
+
+            override fun onPageScrollStateChanged(position: Int) {
+            }
+        })
     }
 
     companion object {
