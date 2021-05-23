@@ -6,9 +6,9 @@ import com.sun.cooktails_app.data.source.repository.CocktailsRepository
 import java.lang.Exception
 
 class CocktailsPresenter(private val repository: CocktailsRepository?) :
-    CocktailsContact.Presenter {
+    CocktailsContract.Presenter {
 
-    private var view: CocktailsContact.View? = null
+    private var view: CocktailsContract.View? = null
 
     override fun getCocktails() {
         repository?.getPopular(
@@ -31,7 +31,7 @@ class CocktailsPresenter(private val repository: CocktailsRepository?) :
         this.view = null
     }
 
-    override fun setView(view: CocktailsContact.View?) {
+    override fun setView(view: CocktailsContract.View?) {
         this.view = view
     }
 }

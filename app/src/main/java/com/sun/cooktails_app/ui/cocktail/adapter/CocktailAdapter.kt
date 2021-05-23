@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.sun.cooktails_app.R
 import com.sun.cooktails_app.data.model.Popular
 
-
 @Suppress("DEPRECATION")
 class CocktailsAdapter(private val onItemClick: (Popular) -> Unit) :
     RecyclerView.Adapter<PopularViewHolder>() {

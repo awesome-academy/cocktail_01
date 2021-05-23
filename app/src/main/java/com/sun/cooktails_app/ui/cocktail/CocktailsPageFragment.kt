@@ -14,11 +14,11 @@ import com.sun.cooktails_app.ui.cocktail.adapter.CocktailsAdapter
 import kotlinx.android.synthetic.main.fragment_popular.*
 import java.lang.Exception
 
-class CocktailsPageFragment : BaseFragment(), CocktailsContact.View {
+class CocktailsPageFragment : BaseFragment(), CocktailsContract.View {
 
     private val gridLayoutManager = GridLayoutManager(context, 2)
     private val adapterCocktails by lazy { CocktailsAdapter() {} }
-    private val cocktailsPresenter: CocktailsContact.Presenter by lazy {
+    private val cocktailsPresenter: CocktailsContract.Presenter by lazy {
         CocktailsPresenter(
             CocktailsRepository.getInstance(
                 CocktailRemoteDataSource.getInstance()

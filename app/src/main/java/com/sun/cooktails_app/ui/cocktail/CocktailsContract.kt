@@ -4,7 +4,7 @@ import com.sun.cooktails_app.data.model.Popular
 import com.sun.cooktails_app.utils.BasePresenter
 import java.lang.Exception
 
-interface CocktailsContact {
+interface CocktailsContract {
 
     interface View {
         fun onGetCocktailsSuccess(cocktails: MutableList<Popular?>)
